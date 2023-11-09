@@ -1,0 +1,35 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{producto.nombre}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+  <ion-header collapse="condense">
+    <ion-toolbar>
+      <ion-buttons slot="start">
+        <ion-back-button></ion-back-button>
+    </ion-buttons>
+      <ion-title size="large">{{producto.nombre}}</ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-card>
+    <img alt="{{producto.nombre}}" src="{{producto.imagen}}" />
+    <ion-card-header>
+      <ion-card-title>{{producto.nombre}}</ion-card-title>
+      <!-- <ion-card-subtitle>Card Subtitle</ion-card-subtitle> -->
+    </ion-card-header>
+  
+    <ion-card-content>
+      {{producto.descripcion}} - ${{producto.precio}}
+    </ion-card-content>
+    <ion-button (click)="cantidad=cantidad + 1" fill="clear">+1</ion-button>
+    <span>{{cantidad}}</span>
+    <ion-button (click)="cantidad=cantidad - 1" fill="clear">-1</ion-button>
+    <ion-button id="open-toast"  fill="clear" (click)="carritoService.agregarAlCarrito(producto, cantidad)" [routerLink]="['/tabs/tab3']">Agregar al carrito</ion-button>
+    <ion-toast trigger="open-toast" message="Producto agregado" [duration]="5000"></ion-toast>
+  </ion-card>
+</ion-content>
