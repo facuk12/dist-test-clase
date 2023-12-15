@@ -1,0 +1,56 @@
+ion-button{
+  display: flex;
+  justify-content: center;
+}
+
+
+
+#formulario {
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+#formulario form {
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 40px;
+  border-radius: 8px;
+  width: 300px;
+  margin: 20px;
+}
+
+#formulario label {
+  display: block;
+  margin-bottom: 8px;
+  color: black;
+}
+
+#formulario input {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: border-color 0.3s;
+}
+
+
+
+#formulario input:focus {
+  border-color: #4caf50;
+  outline: none;
+}
+
+ion-content {
+  --background: transparent;  /* Establece el fondo transparente para que la imagen sea visible */
+  background-image: url(https://i.pinimg.com/564x/e1/cc/10/e1cc107e9b1d5e5bdafacd97a38f7f00.jpg);  /* Ruta a la imagen de fondo en assets */
+  background-size: cover;  /* Ajusta el tamaño de la imagen para que cubra todo el contenedor */
+  background-position: center center;  /* Centra la imagen en el contenedor */
+  background-repeat: no-repeat;  /* Evita que la imagen de fondo se repita */
+}
