@@ -1,0 +1,22 @@
+<ion-content [fullscreen]="true">
+  
+    <ion-toolbar>
+      <ion-title>{{categorias?.nombre}}</ion-title>
+      <ion-buttons slot="start">
+        <ion-back-button defaultHref="tabs/tab2"></ion-back-button>
+      </ion-buttons>
+    </ion-toolbar>
+  
+<section [ngClass]="categorias"> 
+  <a *ngFor="let item of categorias?.productos" 
+  [routerLink]="['/detalle-producto', item.nombre ]"
+  [ngStyle]="{'background-image': 'url('+item.imagen+')'}">
+    
+    
+      <span>{{item.nombre}}</span>
+      
+   
+  </a>
+</section>
+  
+</ion-content>

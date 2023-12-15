@@ -1,28 +1,19 @@
-section{
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    height: 100%;
-    align-content: center;
+
+ion-button{
+    display: flex;
+    justify-content: center;
+    padding-top: 770px;
+    
 }
-section a{
-    color: rgb(31, 24, 24);
-    border-radius: 20px;
-    padding: 80px 0px;
-    text-align: center;
-    margin: 10px;
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    background-position: center;
-    background-size: cover;
-    position: relative;
-    overflow: hidden;
-    span{
-        background-color: white;
-        display: block;
-        width: 100%;
-        position: absolute;
-        bottom: 0px;
-        padding: 5px;
-        font-weight: bold;
-        font-size: x-large;
-    } 
+a{
+color: white;
+
+}
+
+ion-content {
+    --background: transparent;  
+    background-image: url(https://i.pinimg.com/564x/e1/cc/10/e1cc107e9b1d5e5bdafacd97a38f7f00.jpg); 
+    background-size: cover; 
+    background-position: center center;  
+    background-repeat: no-repeat;  
 }

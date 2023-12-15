@@ -17,26 +17,27 @@ export class CartService {
       this.calcularTotal()
     }
   }
-
-  agregarAlCarrito(producto: Producto, cantidad: number) {
-    const index = this.carrito.findIndex(item => item.producto.nombre === producto.nombre);
   
-    if (index === -1) {
-      const productoActual: ProductoCarrito = {
-        cantidad: cantidad > 0 ? cantidad : 1, 
+
+  agregarAlCarrito(producto:Producto,cantidad:number){
+   
+    const index = this.carrito.findIndex(item => item.producto.nombre === producto.nombre);
+    if(index === -1){
+     
+      const productoActual:ProductoCarrito = {
+        cantidad: cantidad,
         producto: producto
-      };
+      }
       this.carrito.push(productoActual);
     } else {
-      const nuevaCantidad = this.carrito[index].cantidad + cantidad;
-      this.carrito[index].cantidad = nuevaCantidad > 0 ? nuevaCantidad : 1; 
+     
+      this.carrito[index].cantidad = this.carrito[index].cantidad + cantidad;
     }
-  
-    console.log(this.carrito);
-    this.guardarLocalStorage();
-    this.calcularTotal();
+    console.log(this.carrito)
+    this.guardarLocalStorage()
+    this.calcularTotal()
   }
-  
+
   eliminarProducto(nombre: string){
     this.carrito = this.carrito.filter(item => item.producto.nombre !== nombre);
     this.guardarLocalStorage()

@@ -1,0 +1,36 @@
+section{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    align-content: center;
+}
+
+section a{
+    position: relative;
+    color: white;
+    border-radius: 10px;
+    padding: 80px 0;
+    text-align: center;
+    margin: 10px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+span{
+    position: absolute;
+    background-color: rgb(54, 49, 49);
+    bottom: 0;
+    display: block;
+    width: 100%;
+    padding: 5px ;
+    color: white;
+    font-weight: bold;
+    font-size:large;
+}
+ion-content {
+    --background: transparent;  
+    background-image: url(https://e1.pxfuel.com/desktop-wallpaper/325/299/desktop-wallpaper-anime-street-illustration-anime-aesthetic-street-thumbnail.jpg); 
+    background-size: cover; 
+    background-position: center center;  
+    background-repeat: no-repeat;  
+}

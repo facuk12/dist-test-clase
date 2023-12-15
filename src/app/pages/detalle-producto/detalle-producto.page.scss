@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin: 0;
+}
+    
+
+
+
+
+
+
+.mi-clase {
+    text-align: center;
+}
+.mi-clase label{
+   color: #f0f0f0;
+   background-color: rgba(0, 0, 0, 0.5); 
+   padding: 5px; 
+   border-radius: 5px; 
+  
+}
+
+.color-selector, #talla-selector {
+   
+    margin: 10px;
+}
+
+#agregarCarrito{
+    display: flex;
+    justify-content: center;
+    margin-left: 25px;
+    margin-right: 25px;
+}
+ion-content {
+    --background: transparent;  
+    background-image: url(https://e0.pxfuel.com/wallpapers/243/849/desktop-wallpaper-music-background-graffiti-iphone-graffiti-art-iphone-band-art.jpg);  /* Ruta a la imagen de fondo en assets */
+    background-size: cover;  
+    background-position: center center;  
+    background-repeat: no-repeat;  
+}
+#contador-container {
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 150px; 
+    margin: 10px; 
+    margin-left: 20px;
+    background-color: #3498db;
+    border: 2px solid #2980b9;
+    transition: background-color 0.5s ease;
+    
+  }
+
+  
+  
+  span {
+    
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0 10px;
+  }
+  
+  ion-button {
+    color: white;
+  }
